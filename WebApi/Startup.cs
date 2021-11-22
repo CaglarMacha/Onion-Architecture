@@ -25,7 +25,18 @@ namespace WebApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            # region Swagger
+            services.AddSwaggerGen(c =>
+            {
+                c.IncludeXmlComments(string.Format(@"{0}\OnionArchitecture.xml", System.AppDomain.CurrentDomain.BaseDirectory));
+                c.SwaggerDoc("v1", new OpenApiInfo
+                {
+                    Version = "v1",
+                    Title = "OnionArchitecture",
+                });
 
+            });
+            #endregion
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
@@ -47,6 +58,17 @@ namespace WebApi
 
             app.UseAuthorization();
 
+            #region Swagger
+            // Enable middleware to serve generated Swagger as a JSON endpoint.
+            app.UseSwagger();
+
+            // Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.),
+            // specifying the Swagger JSON endpoint.
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "OnionArchitecture");
+            });
+            #endregion
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
