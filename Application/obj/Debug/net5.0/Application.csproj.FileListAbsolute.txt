@@ -1,0 +1,5 @@
+C:\Users\cagla\source\repos\Onion-Architecture\Application\obj\Debug\net5.0\Application.csproj.AssemblyReference.cache
+C:\Users\cagla\source\repos\Onion-Architecture\Application\obj\Debug\net5.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cagla\source\repos\Onion-Architecture\Application\obj\Debug\net5.0\Application.AssemblyInfoInputs.cache
+C:\Users\cagla\source\repos\Onion-Architecture\Application\obj\Debug\net5.0\Application.AssemblyInfo.cs
+C:\Users\cagla\source\repos\Onion-Architecture\Application\obj\Debug\net5.0\Application.csproj.CoreCompileInputs.cache

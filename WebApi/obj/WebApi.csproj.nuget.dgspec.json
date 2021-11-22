@@ -4,14 +4,78 @@
     "C:\\Users\\cagla\\source\\repos\\Onion-Architecture\\WebApi\\WebApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\cagla\\source\\repos\\Onion-Architecture\\WebApi\\WebApi.csproj": {
+    "C:\\Users\\cagla\\source\\repos\\Onion-Architecture\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cagla\\source\\repos\\Onion-Architecture\\WebApi\\WebApi.csproj",
-        "projectName": "WebApi",
-        "projectPath": "C:\\Users\\cagla\\source\\repos\\Onion-Architecture\\WebApi\\WebApi.csproj",
+        "projectUniqueName": "C:\\Users\\cagla\\source\\repos\\Onion-Architecture\\Application\\Application.csproj",
+        "projectName": "Application",
+        "projectPath": "C:\\Users\\cagla\\source\\repos\\Onion-Architecture\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\cagla\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cagla\\source\\repos\\Onion-Architecture\\WebApi\\obj\\",
+        "outputPath": "C:\\Users\\cagla\\source\\repos\\Onion-Architecture\\Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\cagla\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\cagla\\source\\repos\\Onion-Architecture\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\cagla\\source\\repos\\Onion-Architecture\\Domain\\Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\cagla\\source\\repos\\Onion-Architecture\\Domain\\Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\cagla\\source\\repos\\Onion-Architecture\\Domain\\Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "C:\\Users\\cagla\\source\\repos\\Onion-Architecture\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\cagla\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\cagla\\source\\repos\\Onion-Architecture\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\cagla\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +104,86 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            },
+            "Swashbuckle.AspNetCore.Swagger": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\cagla\\source\\repos\\Onion-Architecture\\WebApi\\WebApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\cagla\\source\\repos\\Onion-Architecture\\WebApi\\WebApi.csproj",
+        "projectName": "WebApi",
+        "projectPath": "C:\\Users\\cagla\\source\\repos\\Onion-Architecture\\WebApi\\WebApi.csproj",
+        "packagesPath": "C:\\Users\\cagla\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\cagla\\source\\repos\\Onion-Architecture\\WebApi\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\cagla\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\cagla\\source\\repos\\Onion-Architecture\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\cagla\\source\\repos\\Onion-Architecture\\Application\\Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.6.3, )"
